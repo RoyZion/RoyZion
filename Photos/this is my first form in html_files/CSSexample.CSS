@@ -1,0 +1,19 @@
+* {
+    font-size: 20px;
+}
+body {
+    background-color: rgb(175, 231, 212);
+}
+.btn1{
+    color: blue;
+}
+form1{
+    align-items: center; border-color: black ;
+}
+#singbtn{
+    background-color: chocolate;
+    size: 50%;
+}
+
+
+

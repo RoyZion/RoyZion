@@ -1,0 +1,43 @@
+* {
+    font-size: 20px;
+
+}
+body {
+    background-image: url(photos/form\ background.jpg);
+    background-size: 100%;
+}
+#btn1{
+    color: black;
+    background-color: silver;
+    text-align: center;
+    align-items: center;
+}
+
+#btn2{
+    text-align: right;
+    color: black;
+    background-color: silver;
+}
+#div1{
+    text-align: center;
+    align-items: center;   
+}
+.h2{
+    font-size: large;
+    text-align: center;
+    background-color: burlywood;
+    
+}
+form2{
+text-align: center;    
+}
+h3{
+    font-size: large;
+    text-align: center;
+    background-color: burlywood;
+}
+
+#div2{
+    text-align: center;
+}
+
