@@ -1,0 +1,86 @@
+body {
+    background-image: url(photos/WhiteBackground.jpg);
+}
+
+#GridContainer {
+    display: grid;
+    grid-template-areas:'header header header' 
+                        'header header header'
+                        'left main main'
+                        'left main main'
+                        'left main main';
+}
+
+#item1 {
+    grid-area: header;
+    text-align: center;
+    font-size: 50px;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px; 
+}
+
+#item2 {
+    position: relative;
+    top: -110px;
+    width: 200px;
+    content: url(photos/Ramzi.png);
+}
+
+#ShefaLogo{
+    position: relative;
+    top: -220px;
+    width: 200px;
+    left: 830px;
+    content: url(photos/ShefaLogo.png);
+
+}
+
+#item3 {
+    grid-area: left;
+    text-align: center;
+    font-size: 30px;
+    height: 200px;
+    width: 550px;
+    padding: 20px;
+    margin: 20px; 
+
+}
+#item4 {
+    position: relative;
+    left: 150px;
+    content: url(photos/Bosga.jpeg);
+    height: 145px;
+    width: 200px;
+}
+
+#item5 {
+    grid-area: main;
+    text-align: center;
+    font-size: 30px;
+    height: 200px;
+    width: 550px;
+    padding: 20px;
+    margin: 20px; 
+}
+
+#item6{
+    position: relative;
+    content: url(photos/KupaRashit.jpeg);
+    height: 150px;
+    width: 400px;
+    left: 50px;
+    top: -5px;
+    margin: 20px; 
+}
+
+div div {
+    border: 2px solid black;
+    background-color: rgb(173, 17, 23);
+}
+@media screen and (max-width:700px){
+    div div{
+        background-color: blue;
+    }
+}

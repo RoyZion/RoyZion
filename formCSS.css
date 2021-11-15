@@ -1,0 +1,43 @@
+:root{
+    --darkBlue: #242582;
+    --eggplant: #553d67;
+    --pink: #f64c72;
+    --makeup: #99738e;
+}
+
+body {
+    font-family: serif;
+    background-color: var(--makeup);
+    color: rgb(158, 161, 230);
+}
+
+label {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+input {
+    padding: 10px;
+    margin: 10px;
+}
+textarea {
+    padding: 10px;
+    margin: 10px;
+}
+#contactheader {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 10px;
+}
+.buxa {
+    background-color:var(--pink)
+}
+input.buxa {
+    background-color: lightgray;
+}
+@media only screen and (max-width: 600px)
+ {
+    body{
+        background-color: var(--darkBlue);
+    }    
+}

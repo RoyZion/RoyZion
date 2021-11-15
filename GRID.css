@@ -1,0 +1,41 @@
+body {
+    background-color: violet;
+}
+
+#GridContainer {
+    display: grid;
+    grid-template-areas: 'header header header' 
+    'left main main'
+    'left main main';
+}
+
+#item1 {
+    grid-area: header;
+    height: 100px;
+    width: 1050px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+#item2 {
+    grid-area: left;
+    height: 200px;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+#item3 {
+    grid-area: main;
+    height: 200px;
+    width: 600px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+}
+
+div div {
+    border: 2px solid black;
+}
