@@ -1,5 +1,5 @@
 
     var myName = {
-        myName: "Roy Zion"
+        fName: "Roy", lName: "Zion"
     } 
-console.log(myName);
+console.log(myName.fName + ' ' + myName.lName);
