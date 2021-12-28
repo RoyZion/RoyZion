@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home Page
+{% endblock %}
+
+{% block header %}
+<h1>This is the Home Page!</h1>
+{% endblock %}
+
+{% block body %}
+        {% if session.new_name %}
+            <h2>
+                Welcome  {{ session.new_name }} !
+              <!--  Hello {{ 'name' | default('New', true) | upper() }}
+                {{ 'last_name' | default('User', true) | upper() }} -->
+            </h2>
+           <h2>
+                <img src="/static/images/welcomeBack.gif" alt="welcome gif" width="40%">
+            </h2>
+
+       {% else %}
+            <h2>Hello New User</h2>
+            <h2>
+                <img src="/static/images/welcomeGif.gif" alt="welcome gif" width="50%">
+            </h2>
+            <h2>You need to Sign Up first!</h2>
+       {% endif %}
+    {{ super() }}
+{% endblock %}
