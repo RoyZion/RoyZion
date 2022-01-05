@@ -9,9 +9,9 @@
 {% endblock %}
 
 {% block body %}
-        {% if session.username %}
+        {% if session.username or session.new_name %}
             <h2>
-                Welcome back {{ session.username }}
+                Welcome  {{ session.username or session.new_name }} !
               <!--  Hello {{ 'name' | default('New', true) | upper() }}
                 {{ 'last_name' | default('User', true) | upper() }} -->
             </h2>

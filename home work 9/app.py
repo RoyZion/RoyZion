@@ -1,6 +1,6 @@
 from flask import Flask, redirect, url_for, render_template
 from flask import request, session
-# from interact_with_DB import interact_db
+from interact_db import interact_db
 
 app = Flask(__name__)
 
@@ -69,7 +69,8 @@ def logout_assignment9_func():
     session['new_name'] = '' # removing the global variable
     return render_template('assignment9.html') # returns to the log in page
 
-
+from pages.assignment10.assignment10 import assignment10
+app.register_blueprint(assignment10)
 
 if __name__ == '__main__':
         app.secret_key = '123'  # we need a secret key when we import and use flask session
