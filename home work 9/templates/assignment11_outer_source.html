@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Assignment 11 outer source Page
+{% endblock %}
+
+{% block header %}
+    <h1>This is the Assignment 11 outer source Page!</h1>
+{% endblock %}
+
+{% block body %}
+    {% set page_name = 'Assignment 11 outer source Page' %}
+
+    <div class="content">
+        <h3> Frontend </h3>
+        <input type="number" name="number" id="f_number"/>
+        <button onclick="frontend_func()">Click</button>
+
+        <script src="../static/js/assignment11.js"></script>
+
+        <h3> Backend </h3>
+        <form action="/assignment11/outer_source" method="get">
+            <input type="number" name="number" id="b_number">
+            <input type="submit" value="Click">
+        </form>
+
+    <!--    output-->
+        <br><br>
+        <main>
+            {% if user %}
+                <img src="{{ user.avatar }}" alt="Profile Picture"/>
+                <div>
+                    <span>{{ user.name}}</span>
+                    <br>
+                    <a href="mailto:{{ user.email }}">Send Email</a>
+                    <br><br>
+                </div>
+            {% endif %}
+        </main>
+    </div>
+
+
+{% endblock %}
