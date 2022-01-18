@@ -88,6 +88,14 @@ def assignment11_os_page():
         return render_template('assignment11_outer_source.html', user=res['data'])
     return render_template('assignment11_outer_source.html')
 
+@app.route('/assignment12/restapi_users', defaults={'user_id': 1})
+@app.route("/assignment12/restapi_users/<int:user_id>")
+def assignment12_func(user_id):
+    query = 'select * from users where id=%s' % user_id
+    query_result = query_to_json(query=query)
+    if len(query_result) == 0:
+        query_result = [{'status': 'failed', 'message': 'user not found'}]
+    return json.dumps(query_result)
 
 if __name__ == '__main__':
         app.secret_key = '123'  # we need a secret key when we import and use flask session
